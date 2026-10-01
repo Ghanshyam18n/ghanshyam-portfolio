@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Manual API testing using Postman">
+<rect width="640" height="420" fill="#090909"/>
+<rect x="18" y="18" width="604" height="384" rx="18" fill="#111" stroke="#fac230" stroke-width="6"/>
+<text x="55" y="105" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="800">API TESTING</text>
+<text x="55" y="145" fill="#fac230" font-family="Arial,sans-serif" font-size="28" font-weight="700">POSTMAN • MANUAL</text>
+<rect x="55" y="180" width="530" height="55" rx="9" fill="#1c1c1c"/>
+<text x="75" y="216" fill="#fac230" font-family="monospace" font-size="19" font-weight="700">GET   /products</text>
+<rect x="55" y="252" width="250" height="42" rx="8" fill="#181818" stroke="#333"/>
+<text x="75" y="279" fill="#ddd" font-family="Arial,sans-serif" font-size="17" font-weight="700">✓ Status Code</text>
+<rect x="335" y="252" width="250" height="42" rx="8" fill="#181818" stroke="#333"/>
+<text x="355" y="279" fill="#ddd" font-family="Arial,sans-serif" font-size="17" font-weight="700">✓ Response Body</text>
+<rect x="55" y="310" width="250" height="42" rx="8" fill="#181818" stroke="#333"/>
+<text x="75" y="337" fill="#ddd" font-family="Arial,sans-serif" font-size="17" font-weight="700">✓ Positive Cases</text>
+<rect x="335" y="310" width="250" height="42" rx="8" fill="#181818" stroke="#333"/>
+<text x="355" y="337" fill="#ddd" font-family="Arial,sans-serif" font-size="17" font-weight="700">✓ Negative Cases</text>
+</svg>

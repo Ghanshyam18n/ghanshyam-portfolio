@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <style>
+    .main { stroke:#F5C542; stroke-width:9; stroke-linecap:round; stroke-linejoin:round; }
+    .sub { stroke:#FFFFFF; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; opacity:.78; }
+    .dot { fill:#F5C542; }
+    .code { transform-origin:128px 118px; animation:float 2.6s ease-in-out infinite; }
+    .small { transform-origin:128px 174px; animation:floatSmall 2.6s ease-in-out infinite .15s; }
+    .scan { stroke:#F5C542; stroke-width:4; stroke-linecap:round; opacity:0; animation:scan 2.6s ease-in-out infinite; }
+    @keyframes float {
+      0%,100% { transform:translateY(0); }
+      50% { transform:translateY(-5px); }
+    }
+    @keyframes floatSmall {
+      0%,100% { transform:translateY(0); opacity:.72; }
+      50% { transform:translateY(4px); opacity:1; }
+    }
+    @keyframes scan {
+      0%,25% { opacity:0; transform:translateY(20px); }
+      45% { opacity:.8; transform:translateY(0); }
+      65%,100% { opacity:0; transform:translateY(-20px); }
+    }
+  </style>
+
+  <!-- Main code symbol -->
+  <g class="code">
+    <path class="main" d="M92 82 L62 112 L92 142"/>
+    <path class="main" d="M164 82 L194 112 L164 142"/>
+    <path class="main" d="M145 70 L111 154"/>
+  </g>
+
+  <!-- Small active automation/download cue -->
+  <g class="small">
+    <path class="sub" d="M83 174 L69 187 L83 200"/>
+    <path class="sub" d="M173 174 L187 187 L173 200"/>
+    <path class="sub" d="M128 165 V197"/>
+    <path class="sub" d="M115 187 L128 200 L141 187"/>
+  </g>
+
+  <!-- subtle scanning line -->
+  <path class="scan" d="M58 187 H198"/>
+
+  <!-- tiny accent dots -->
+  <circle class="dot" cx="48" cy="112" r="3"/>
+  <circle class="dot" cx="208" cy="112" r="3"/>
+</svg>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sue+Ellen+Francisco&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Kalam:wght@300;400;700&family=Oswald:wght@200..700&family=Palanquin+Dark&family=Paytone+One&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Sue+Ellen+Francisco&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "NHaasGroteskDSPro";
+  src: url("https://res.cloudinary.com/dlonoxpli/raw/upload/v1723967713/fonts/v34unugltvgqyedypwm1.ttf")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ariata";
+  src: url("https://res.cloudinary.com/dlonoxpli/raw/upload/v1723839710/fonts/f44wuzi0sbhn17fcundp.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Eleventy";
+  src: url("/fonts/11.20___.TTF") format("truetype"),
+    url("/fonts/11.20___.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  background: black;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* styles.css */
+@keyframes underline-from-left {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.underline-animation {
+  position: relative;
+  transition: 0.3 ease;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.underline-animation:hover::after {
+  width: 100%;
+}
+.scaleX {
+  transform: scale(1);
+  transition: 0.3s all ease-out;
+}
+.scaleX:hover {
+  transform: scale(1.05);
+}
+.text-stroke {
+  -webkit-text-stroke: 2px #eee;
+  text-stroke: 1px white;
+}
+.text {
+  animation: rotateT 12s linear infinite;
+}
+
+@keyframes rotateT {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  display: flex;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.blob {
+  animation: rotateT 10s linear infinite;
+}
+
+.i {
+  font-size: 20rem;
+  background-color: red;
+}
+
+@keyframes dhak-dhak {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* get in touch */
+#center {
+  top: 100%; /* Start offscreen */
+}
+.main h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-size: 12rem; */
+}
+#t-h1 {
+  position: absolute;
+  top: 100%;
+  /* bottom: 50%; */
+}
+
+#b-h1 {
+  position: absolute;
+  top: 0%;
+}
+/* text-stroke */
+.text-st {
+  color: black; /* Set text color to transparent */
+  -webkit-text-stroke: 1.2px #fff; /* Stroke width and color */
+}
+/* for iamge */
+/* img {
+  object-cover: contain;
+} */
+img {
+  background-size: contain;
+}
+
+/* Portfolio stability fixes */
+html, body, #root { width: 100%; min-height: 100%; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+@media (max-width: 900px) {
+  .cursor-follower { display: none; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 15px; }
+  .portfolio-name {
+    font-size: clamp(2rem, 8.2vw, 3.2rem);
+    letter-spacing: -0.045em;
+  }
+}
+
+/* Responsive portfolio name: keep the full name visible on phones without changing the desktop look. */
+.portfolio-name {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  overflow: visible;
+}
+
